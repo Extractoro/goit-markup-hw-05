@@ -438,7 +438,7 @@ ul {
 
 .team-social {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 0 32px;
 }
 
@@ -446,6 +446,11 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+.team-social-item:last-child {
+  margin-right: 0px;
 }
 
 .team-social-link {
@@ -539,7 +544,8 @@ ul {
     top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-item-link:hover {
+.clients-item-link:hover,
+.clients-item-link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
